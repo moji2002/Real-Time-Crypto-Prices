@@ -1,6 +1,6 @@
 {
   "name": "crypto-ws",
-  "description": "Real-Time Crypto Prices using the Binance API with JavaScript & Websockets",
+  "description": "Real-Time Crypto Prices using the Binance API with React & Websockets",
   "version": "0.1.0",
   "private": true,
   "scripts": {
