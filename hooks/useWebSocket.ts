@@ -13,6 +13,7 @@ const useWebSocket = (url: string) => {
     useEffect(() => {
         const ws = new WebSocket(url)
         ws.onmessage = onMessageHandler
+        
         return () => ws.close()
     }, [url])
 
