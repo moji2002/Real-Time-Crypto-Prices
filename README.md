@@ -1,4 +1,4 @@
-#Real-Time Crypto Prices using the Binance API with React & Websockets
+Real-Time Crypto Prices using the Binance API with React & Websockets
 
 To run the development server:
 
