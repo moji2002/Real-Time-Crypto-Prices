@@ -1,11 +1,13 @@
-import { useEffect, useState } from 'react'
+import { useEffect, useState, useRef } from 'react'
 
 const useWebSocket = (url: string) => {
     const [data, setData] = useState()
+    const previousData = useRef()
 
     const onMessageHandler = (e: { data: string }) => {
         const data = JSON.parse(e.data)
         setData(data)
+        previousData.current = data
     }
 
     useEffect(() => {
@@ -14,8 +16,7 @@ const useWebSocket = (url: string) => {
         return () => ws.close()
     }, [url])
 
-    return [data]
+    return [data, previousData.current]
 }
-
 
 export default useWebSocket
