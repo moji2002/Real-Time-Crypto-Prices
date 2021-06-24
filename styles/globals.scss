@@ -1,3 +1,5 @@
+@import './colors';
+
 html,
 body {
   padding: 0;
@@ -16,5 +18,5 @@ a {
 }
 
 body{
-  background-color: dimgray;
+  background-color: var(--color-background);
 }

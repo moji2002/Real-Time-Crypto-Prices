@@ -1,0 +1,24 @@
+.table {
+  border-collapse: collapse;
+  width: 100%;
+  color: white;
+
+  &__row {
+    text-align: left;
+    transition: background cubic-bezier(0.075, 0.82, 0.165, 1) 2000ms;
+    // transition: background ease 100ms;
+  }
+
+  &__cell {
+    padding: 10px;
+    width: 30%;
+  }
+}
+
+.positive {
+  background-color: var(--color-green);
+}
+
+.negative {
+  background-color: var(--color-red);
+}

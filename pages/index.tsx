@@ -1,9 +1,8 @@
-import Head from 'next/head'
-import Link from 'next/link'
-import styles from '../styles/Home.module.css'
+import Head from "next/head";
+import styles from "../styles/Home.module.scss";
+import CryptoTable from "../components/CryptoTable";
 
-export default function Home() {
-
+export default function WS() {
   return (
     <div className={styles.container}>
       <Head>
@@ -11,9 +10,7 @@ export default function Home() {
         <meta name="description" content="Real-Time Crypto Prices" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Link href="/ws">
-        <span style={{ cursor: "pointer", color: "white" }}>go to ws page</span>
-      </Link>
+      <CryptoTable  />
     </div>
-  )
+  );
 }
