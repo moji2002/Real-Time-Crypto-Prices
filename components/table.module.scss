@@ -5,8 +5,8 @@
 
   &__row {
     text-align: left;
-    transition: background cubic-bezier(0.075, 0.82, 0.165, 1) 2000ms;
-    // transition: background ease 100ms;
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1) 500ms;
+    margin-bottom: 10px;
   }
 
   &__cell {
@@ -16,9 +16,11 @@
 }
 
 .positive {
-  background-color: var(--color-green);
+  color: var(--color-green);
+  background-color: var(--color-black);
 }
 
 .negative {
-  background-color: var(--color-red);
+  color: var(--color-red);
+  background-color: var(--color-black);
 }
